@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+		:root{
+			--main-color: #1FA459;
+			--main-color-dark: rgb(14, 129, 64);
+
+			--orange-color: #F8A962;
+			--orange-color-dark: #d48947;
+
+			--red-color: #F06363;
+			--red-color-dark: #b85252;
+
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		::selection{
+			background-color: var(--main-color);
+			color: #FFF;
+		}
+
+		.container{
+			display: flex;
+			flex-flow: column wrap;
+			width: 100%;
+			height: 100vh;
+			align-items: center;
+			background-image: url(../images/bg.png);
+			background-size: 200px;
+			gap: 60px;
+			padding-top: 50px;
+		}
+
+		.logo{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px 5px 10px 5px;
+			border-radius: 12px;	
+			width: 80px;
+			border: 2px var(--main-color) solid;
+			background-color: #fff;
+		}
+
+		.wrapper{
+			display: flex;
+			flex-flow: column wrap;
+			gap: 15px;
+		}
+
+		label{
+			font-weight: 800;
+		}
+
+		input{
+			width: 220px;
+			border-radius: 19px;
+			border: 3px solid var(--main-color);
+			background-color: #FFF;
+			font-size: 30px;	
+			font-weight: 800;
+			outline: none;
+			text-align: center;
+			padding: 10px 50px;
+		}
+
+		.btn.activate {
+			background-color: var(--orange-color);
+		}
+
+		.btn.activate:hover{
+			background-color: var(--orange-color-dark);
+		}
+
+		.btn.yes {
+			background-color: var(--red-color);
+		}
+
+		.btn.yes:hover{
+			background-color: var(--red-color-dark);
+		}
+		.checker-menu{
+			visibility: hidden;
+			display: flex;
+			flex-flow: column wrap;
+			max-width: 400px;
+			min-width: 220px;
+			background-color: #fff;
+			border-radius: 30px;
+			border: 2px solid #000;
+			padding: 40px 50px;
+			margin: 0px 15px;
+			gap: 20px;
+		}
+
+		.info{
+			font-size: 20px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		.info.base{
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.info.was-activated{
+			color: var(--red-color);
+		}
+
+		.choice-panel{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			gap: 10px;
+		}
+
+		.btn{
+			font-weight: 800;
+			color: #fff;
+			background-color: var(--main-color);
+			border-radius: 22px;
+			border: none;
+			padding: 15px 15px;
+		}
+
+		.btn:hover{
+			background-color: var(--main-color-dark);
+		}
